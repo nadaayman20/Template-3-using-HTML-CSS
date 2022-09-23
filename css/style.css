@@ -890,9 +890,19 @@ a{
     align-items: center;
     justify-content: space-between;
 }
+@media (max-width: 991px) {
+  .work .container {
+    flex-direction: column;
+  }
+}
 .work .box .image{
     max-width: 100%;
     margin-right: 100px;
+}
+@media (max-width: 991px) {
+  .work .image {
+    margin: 0 0 50px;
+  }
 }
 .work .info .box{
     display: flex;
@@ -907,6 +917,12 @@ a{
     position: relative;
     z-index: 1;
   
+}
+@media (max-width: 767px) {
+  .work .info .box {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .work .info .box::before{
     content: "";
@@ -929,6 +945,11 @@ a{
 .work .info .box img{
     width: 64px;
     margin-right: 30px;
+}
+@media (max-width: 767px) {
+  .work .info .box img {
+    margin: 0 0 30px;
+  }
 }
 .work .info .box h3{
     font-size: 22px;
